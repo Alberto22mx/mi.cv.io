@@ -2,7 +2,7 @@ onload = () => {
     let elem = document.querySelector('#menu-fixed');
     let rect = elem.getBoundingClientRect();
     window.onscroll = function() {
-        if(window.scrollY > rect.y -20) {
+        if(window.scrollY > rect.y + 100) {
             elem.classList.add('nombreclase');
             elem.classList.remove('menu');
         } else {
