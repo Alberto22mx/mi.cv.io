@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.nombreclase {
+/* .nombreclase {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@ header .nombreclase a {
   display: inline-block;
   text-decoration: none;
   border-bottom: 2px solid transparent;
-}
+} */
 header .nombreclase a:hover {
   border-bottom: 2px solid #fff;
 }
@@ -49,6 +49,7 @@ header .nombreclase a:hover {
 
 /* ----- ----- HEADER ----- ----- */
 header {
+  margin: 70px 0;
   background: #49A3D6;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,8 +57,15 @@ header {
 }
 
 .menu {
-  margin: 40px 0;
   text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #49A3D6;
+  text-align: right;
+  padding: 20px 131px;
 }
 
 header .menu a {
@@ -103,7 +111,7 @@ header .menu a:hover {
 .main .acerca-de {
   text-align: center; }
   .main .acerca-de .foto {
-    margin-top: -95px; }
+    margin-top: -160px; }
     .main .acerca-de .foto img {
       border-radius: 50%;
       vertical-align: top;
@@ -115,6 +123,9 @@ header .menu a:hover {
     line-height: 30px;
     width: 80%;
     margin: 40px auto 60px auto; }
+    .main .acerca-de .texto p {
+      text-align: justify;
+    }
     .main .acerca-de .texto .titulo {
       font-size: 34px;
       margin-bottom: 40px;
@@ -223,7 +234,7 @@ footer .pie {
       display: block;
       margin: 0 20px;
       border-radius: 3px; }
-    footer .pie .contenedor .twitter:hover {
+    /* footer .pie .contenedor .twitter:hover {
       background: #55acee; }
     footer .pie .contenedor .facebook:hover {
       background: #3b5998; }
@@ -232,7 +243,7 @@ footer .pie {
     footer .pie .contenedor .github:hover {
       background: #666666; }
     footer .pie .contenedor .instagram:hover {
-      background: #3f729b; }
+      background: #3f729b; } */
 
 /* ----- ----- MEDIA QUERIES ----- ----- */
 @media screen and (max-width: 800px) {
@@ -261,8 +272,65 @@ footer .pie {
     flex-wrap: wrap; }
     footer .pie .contenedor a {
       padding: 16px; }
-.nombreclase {
-  padding: 20px 2px;
 }
-    }
-/*# sourceMappingURL=estilos.css.map */
+
+.titulo-trabajos {
+  font-size: 34px;
+  line-height: 34px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: 300;
+  color: #323068;
+  text-align: center;
+
+}
+  
+.contenedor-juegos {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: space-between;
+}
+
+#mar, #tom, #tictac, #contenedor-modal {
+  display: none;
+}
+
+#modalJuegos {
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -320px;
+  width: 595px;
+  height: 500px;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.fa-close {
+  font-size: 25px;
+  margin: 10px;
+}
+
+#cerrar {
+  width: 100%;
+}
+
+#contenedor-modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128,128,128,0.5);
+  position: fixed;
+}
+
+#juego iframe{
+  margin: 0 auto;
+  left: 100px;
+}
