@@ -22,17 +22,13 @@ header .nombreclase a:hover {
 }
 /* ----- ----- HEADER ----- ----- */
 header {
-  margin: 70px 0;
+  margin: 30px 0;
   background: #49A3D6;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 420px;
-  top: -20px;
-  position: relative;
-  z-index: -1;
 }
 nav {
   padding: 20px!important;
+  z-index: 10;
 }
 header .menu a {
   margin: 0 20px;
@@ -82,7 +78,7 @@ header .contenedor-texto .texto .profesion {
   text-align: center;
 }
 .main .acerca-de .foto {
-  margin-top: -260px;
+  margin-top: -230px;
 }
 .main .acerca-de .foto img {
   border-radius: 50%;
