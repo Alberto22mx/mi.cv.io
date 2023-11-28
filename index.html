@@ -8,16 +8,39 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
-  <script type="text/javascript" src="js/main.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<div class="contenedor">
-			<nav id="menu-fixed" class="menu">
-				<a href="#AcercaDe">Acerca de</a>
-				<a href="#Trabajos">Trabajos</a>
-				<a href="#Conocimientos">Conocimientos</a>
-				<a href="#Contacto">Contacto</a>
+			<nav class="navbar fixed-top navbar-expand-lg menu" style="background-color: #49A3D6;">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#" style="color: white;font-size: 20px;font-weight: bold;">Jose Alberto</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#AcercaDe" style="color: white;">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#Trabajos" style="color: white;">Trabajos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#Conocimientos" style="color: white;">Conocimientos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#Cursos" style="color: white;">Cursos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#Contacto" style="color: white;">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 			
 			<div class="contenedor-texto">
@@ -49,9 +72,9 @@
 		<section class="trabajos">
 			<div class="contenedor">
 				<h3 class="titulo">Trabajos</h3>
-						
+				<p style="text-align: center;padding: 30px 0;">Mi primer trabajo fue a principios de 2013 y al día de hoy he participado en más de 20 proyectos los cuales sean concluido de forma exitosa.</p>
 				<div class="contenedor-trabajos">
-					<div class="trabajo">
+					<div class="trabajo" onclick="mostrarModal('aci')">
 						<div class="thumb">
 							<img src="img/trabajos/logoACI.png" alt="ACI GROUP">
 						</div>
@@ -60,7 +83,7 @@
 							<p class="categoria">JAVA - SPRING BOOT - HTML - CSS - JS - PRIMEUI - ORACLE - ECLIPSE</p>
 						</div>
 					</div>
-					<div class="trabajo">
+					<div class="trabajo" onclick="mostrarModal('ahorra')">
 						<div class="thumb">
 							<img src="img/trabajos/logotipo.svg" alt="AHORRA SEGUROS" height="90px">
 						</div>
@@ -69,7 +92,7 @@
 							<p class="categoria">JAVA - KOTLIN - ANGULAR - HTML - CSS - JS - TYPESCRIPT - NODEJS - MONGO - MYSQL - POSTGRES - GIT - BITBUCKET - JIRA - NPM - SVM - ASTERISK</p>
 						</div>
 					</div>
-					<div class="trabajo">
+					<div class="trabajo" onclick="mostrarModal('it')">
 						<div class="thumb" style="margin-bottom: 40px;">
 							<img src="img/trabajos/desarrolloIT.PNG" alt="DESARROLLO IT">
 						</div>
@@ -78,7 +101,7 @@
 							<p class="categoria">C# - .NET - VISUAL BASIC - HTML - CSS - JS - SQL SEVER</p>
 						</div>
 					</div>
-					<div class="trabajo">
+					<div class="trabajo" onclick="mostrarModal('gv')">
 						<div class="thumb" style="background-color: darkcyan;margin-bottom: 40px;">
 							<img src="img/trabajos/logo-1.png.webp" alt="GRUPO VANGUARDIA">
 						</div>
@@ -87,7 +110,7 @@
 							<p class="categoria">PHP - MySQL - HTML - CSS</p>
 						</div>
 					</div>
-					<div class="trabajo">
+					<div class="trabajo" onclick="mostrarModal('inali')">
 						<div class="thumb">
 							<img src="img/trabajos/logo_inali_c.png" alt="Lorem Ipsum">
 						</div>
@@ -97,21 +120,26 @@
 						</div>
 					</div>
 				</div>
+				<div id="Conocimientos"></div>
 			</div>
 		</section>
+		
 		<section class="juegos">
 			<div class="contenedor">
-				<div id="Conocimientos" style="height: 50px;"></div>
-				<h3 class="titulo-trabajos">Ejemplos de Conocimientos y Cursos</h3>
+				<h3 class="titulo-trabajos">Conocimientos</h3>
+				<p style="text-align: center;padding: 30px 0;">Para hacer notar el dominio de las tecnologías y conocimientos he realizado algunos ejemplos de forma gráfica.</p>
 				<div class="contenedor-juegos">
 					<div class="cards">
-						<img src="img/juegos/mar.png" onclick="mostrarModal('mar')" width="300" height="220" alt="mar">
+						<div class="sombra" onclick="mostrarModal('mar')"></div>
+						<img src="img/juegos/mar.png" width="300" height="220" alt="mar">
 					</div>
 					<div class="cards">
-						<img src="img/juegos/tictoc.png" onclick="mostrarModal('tictac')" width="300" height="220" alt="tictoc">
+						<div class="sombra" onclick="mostrarModal('tictac')"></div>
+						<img src="img/juegos/tictoc.png" width="300" height="220" alt="tictoc">
 					</div>
 					<div class="cards">
-						<img src="img/juegos/tom.png" onclick="mostrarModal('tom')" width="300" height="220" alt="tom">
+						<div class="sombra" onclick="mostrarModal('tom')"></div>
+						<img src="img/juegos/tom.png" width="300" height="220" alt="tom">
 					</div>
 				</div>
 				<div id="contenedor-modal">
@@ -125,7 +153,28 @@
 					</div>
 				</div>
 			</div>
-			
+			<div id="Cursos"></div>
+		</section>
+
+		<section class="cursos">
+			<div class="contenedor">
+				<h3 class="titulo-trabajos" style="padding-top: 30px;">Cursos</h3>
+				<p style="text-align: center;padding: 30px 0;">He tomado más de 30 cursos en Udemy y en otras plataformas como platzi, estos cursos se actualizan de forma constante.</p>
+				<div class="box" style="display: flex;justify-content: center;flex-wrap: wrap;">
+					<span style="margin-bottom: 20px;"><img src="img/cursos/PHP8.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/AdobeXD.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Angular.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Desarrollo.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Diseño web.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/HTML5.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Informatica.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Java.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/Mongo.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/MySQL.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/phaser.JPG"/></span>
+					<span style="margin-bottom: 20px;"><img src="img/cursos/wordpress.JPG"/></span>
+				</div>
+			</div>
 		</section>
 	</section>
 
