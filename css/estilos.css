@@ -26,7 +26,10 @@ header {
   background: #49A3D6;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 420px;
+  top: -20px;
+  position: relative;
+  z-index: -1;
 }
 nav {
   padding: 20px!important;
