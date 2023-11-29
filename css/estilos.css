@@ -10,6 +10,17 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
 }
+.este {
+  height: 300px;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  border: 1px solid;
+}
+.row .d-flex {
+  margin-bottom: 30px!important;
+}
 header .nombreclase a:hover {
   border-bottom: 2px solid #fff;
 }
@@ -338,6 +349,7 @@ footer .pie .contenedor a {
   height: 100%;
   background-color: rgba(128,128,128,0.5);
   position: fixed;
+  z-index: 2000;
 }
 #juego iframe{
   margin: 0 auto;
