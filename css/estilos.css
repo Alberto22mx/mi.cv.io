@@ -10,6 +10,17 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
 }
+#whatsapp {
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  font-size: 50px;
+  z-index: 15;
+}
+#whatsapp a {
+  text-decoration:none;
+  color: green;
+}
 .este {
   height: 300px;
   line-height: 1em;
@@ -55,15 +66,25 @@ header .menu a:hover {
   border-bottom: 2px solid #fff;
 }
 header .contenedor-texto {
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   margin: 10px 0;
+  animation-name: animacion1;
+  animation-duration: 2s;
+}
+@keyframes animacion1 {
+  from {
+    bottom: -300px;
+  }
+  to {
+    bottom: 0px;
+  }
 }
 header .contenedor-texto .texto {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 3px;
-  display: inline-block;
   text-align: center;
   padding: 20px 60px;
 }
@@ -250,6 +271,9 @@ footer .pie .contenedor a {
 @media screen and (max-width: 800px) {
   header .menu-new {
     color: red;
+  }
+  #whatsapp {
+    left: 80%;
   }
   header .menu {
     text-align: center;
